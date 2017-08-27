@@ -69,3 +69,60 @@ def teachTag2Tag(stag1, stag2, id):
     
     '''
 
+def forgetConversation(inputSentence, outputSentence, id):
+    '''
+    ARGS:
+
+    RETURNS:
+    
+    RAISES:
+    
+    '''
+
+def forgetWord2Tag(word, wtag, id):
+    '''
+    ARGS:
+
+    RETURNS:
+    
+    RAISES:
+    
+    '''
+
+def forgetTag2Word(wtag, word, id):
+    '''
+    ARGS:
+
+    RETURNS:
+    
+    RAISES:
+    
+    '''
+
+def forgetSentence2Tag(sentence, stag, id):
+    '''
+    ARGS:
+
+    RETURNS:
+    
+    RAISES:
+    
+    '''
+def forgetTag2Sentence(stag, sentence, id):
+    '''
+    ARGS:
+
+    RETURNS:
+    
+    RAISES:
+    
+    '''
+def forgetTag2Tag(stag1, stag2, id):
+    '''
+    ARGS:
+
+    RETURNS:
+    
+    RAISES:
+    
+    '''

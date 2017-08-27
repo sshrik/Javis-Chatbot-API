@@ -22,6 +22,7 @@ def makeWTag(inputWord):
     
     '''
 
+
 def tagAllExist(tagList1, tagList2):
     '''
     ARGS:

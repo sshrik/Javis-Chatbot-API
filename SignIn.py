@@ -4,7 +4,7 @@
 This module is about managing ID and APIKey.
 '''
 
-def getAPIKey():
+def getAPIKey(id):
     '''
     ARGS:
 
@@ -14,7 +14,7 @@ def getAPIKey():
     
     '''
 
-def isIdExist():
+def isIdExist(id):
     '''
     ARGS:
 
