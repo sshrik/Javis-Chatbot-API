@@ -9,6 +9,8 @@ DB Schema is like below.
     signInSchemaCollection = client[masterID]["SignIn"]
 '''
 
+import pymongo as mogdb
+
 def teachConversation(inputSentence, outputSentence, id):
     '''
     ARGS:
@@ -126,3 +128,30 @@ def forgetTag2Tag(stag1, stag2, id):
     RAISES:
     
     '''
+
+
+def connectToMasterDB(to='localhost',port=27017):
+    '''
+    ARGS :
+        to = where the db is located ip. Default is localhos, 127.0.0.1.
+        port = where the db is located port. Default is 27017.
+    RETURNS :
+        databasePlace = where can find data.
+    '''
+    connection = mogdb.MongoClient(to, port)
+    databasePlace = connection["master"]
+
+    return databasePlace
+
+def connectToNonMasterDB(id, to='localhost',port=27017):
+    '''
+    ARGS :
+        to = where the db is located ip. Default is localhos, 127.0.0.1.
+        port = where the db is located port. Default is 27017.
+    RETURNS :
+        databasePlace = where can find data.
+    '''
+    connection = mogdb.MongoClient(to, port)
+    databasePlace = connection[id]
+
+    return databasePlace
